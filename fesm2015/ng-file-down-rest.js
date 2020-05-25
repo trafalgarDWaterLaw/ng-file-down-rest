@@ -28,6 +28,7 @@ class NgFileDownRestComponent {
     constructor(document) {
         this.document = document;
         this.methodType = 'GET';
+        this.fileName = 'myFile';
         this.tagName = 'Download';
         this.response = new EventEmitter();
         this.blobUrl = '';
@@ -115,18 +116,25 @@ class NgFileDownRestComponent {
      */
     makeAmends(blob, that) {
         that.blobUrl = window.URL.createObjectURL(blob);
-        window.open(that.blobUrl);
+        /** @type {?} */
+        let elm = document.createElement('a');
+        elm.href = that.blobUrl;
+        elm.download = this.fileName;
+        document.body.append(elm);
+        elm.click();
+        elm.remove();
+        window.URL.revokeObjectURL(that.blobUrl);
         this.response.emit(this.message);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
-        window.URL.revokeObjectURL(this.blobUrl);
         this.urlPath = '';
         this.methodType = 'GET';
         this.params = '';
         this.header = {};
+        this.fileName = 'myFile';
         this.tagName = 'Download';
         this.styleCss = '';
         this.blobUrl = '';
@@ -146,6 +154,7 @@ NgFileDownRestComponent.ctorParameters = () => [
 NgFileDownRestComponent.propDecorators = {
     urlPath: [{ type: Input }],
     methodType: [{ type: Input }],
+    fileName: [{ type: Input }],
     params: [{ type: Input }],
     header: [{ type: Input }],
     tagName: [{ type: Input }],
@@ -158,6 +167,8 @@ if (false) {
     NgFileDownRestComponent.prototype.urlPath;
     /** @type {?} */
     NgFileDownRestComponent.prototype.methodType;
+    /** @type {?} */
+    NgFileDownRestComponent.prototype.fileName;
     /** @type {?} */
     NgFileDownRestComponent.prototype.params;
     /** @type {?} */

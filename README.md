@@ -36,6 +36,10 @@ Of type string, takes two values (`GET` and `POST`)
 Of type string, takes stringified object as input(body of post rest call). 
 eg: `"{'fileName':'sound.wav'}"`
 
+#### fileName
+Of type string, specify the file name of the file to be downloaded. 
+eg: `"myFile"`
+
 #### header
 Of type string, takes stringified object as input. Object contains header key value pair for the rest call.
 eg: `"{'Content-Type':'application/json', 'cache-control':'no-cache'}"`

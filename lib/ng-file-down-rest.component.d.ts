@@ -3,6 +3,7 @@ export declare class NgFileDownRestComponent implements OnInit, AfterViewInit, O
     private document;
     urlPath: string;
     methodType: string;
+    fileName: string;
     params: any;
     header: any;
     tagName: string;

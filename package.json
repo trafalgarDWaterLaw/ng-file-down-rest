@@ -1,41 +1,41 @@
 {
-  "name": "ng-file-down-rest",
-  "version": "1.0.0",
-  "description": "A simple file download library for angular with rest call integration",
-  "author": "Mohit Paritosh",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/trafalgarDWaterLaw/ng-file-down-rest.git"
-  },
-  "bugs": {
-    "url": "https://github.com/trafalgarDWaterLaw/ng-file-down-rest/issues"
-  },
-  "homepage": "https://github.com/trafalgarDWaterLaw/ng-file-down-rest",
-  "keywords": [
-    "angular",
-    "javascript",
-    "typescript",
-    "rest",
-    "download",
-    "api",
-    "file"
-  ],
-  "license": "MIT",
-  "peerDependencies": {
-    "@angular/common": "^8.2.0",
-    "@angular/core": "^8.2.0"
-  },
-  "main": "bundles/ng-file-down-rest.umd.js",
-  "module": "fesm5/ng-file-down-rest.js",
-  "es2015": "fesm2015/ng-file-down-rest.js",
-  "esm5": "esm5/ng-file-down-rest.js",
-  "esm2015": "esm2015/ng-file-down-rest.js",
-  "fesm5": "fesm5/ng-file-down-rest.js",
-  "fesm2015": "fesm2015/ng-file-down-rest.js",
-  "typings": "ng-file-down-rest.d.ts",
-  "metadata": "ng-file-down-rest.metadata.json",
-  "sideEffects": false,
-  "dependencies": {
-    "tslib": "^1.9.0"
-  }
+    "name": "ng-file-down-rest",
+    "version": "1.0.1",
+    "description": "A simple file download library for angular with rest call integration",
+    "author": "Mohit Paritosh",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/trafalgarDWaterLaw/ng-file-down-rest.git"
+    },
+    "bugs": {
+        "url": "https://github.com/trafalgarDWaterLaw/ng-file-down-rest/issues"
+    },
+    "homepage": "https://github.com/trafalgarDWaterLaw/ng-file-down-rest",
+    "keywords": [
+        "angular",
+        "javascript",
+        "typescript",
+        "rest",
+        "download",
+        "api",
+        "file"
+    ],
+    "license": "MIT",
+    "peerDependencies": {
+        "@angular/common": "^8.2.0",
+        "@angular/core": "^8.2.0"
+    },
+    "main": "bundles/ng-file-down-rest.umd.js",
+    "module": "fesm5/ng-file-down-rest.js",
+    "es2015": "fesm2015/ng-file-down-rest.js",
+    "esm5": "esm5/ng-file-down-rest.js",
+    "esm2015": "esm2015/ng-file-down-rest.js",
+    "fesm5": "fesm5/ng-file-down-rest.js",
+    "fesm2015": "fesm2015/ng-file-down-rest.js",
+    "typings": "ng-file-down-rest.d.ts",
+    "metadata": "ng-file-down-rest.metadata.json",
+    "sideEffects": false,
+    "dependencies": {
+        "tslib": "^1.9.0"
+    }
 }
